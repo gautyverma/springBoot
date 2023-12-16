@@ -1,14 +1,11 @@
 package com.matuga.springSecurity.config;
 
-import javax.sql.DataSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.provisioning.JdbcUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
@@ -18,13 +15,16 @@ public class ProjectSecurityConfiguration {
     /*
      * Below are the custom security configuration
      * */
-    http.authorizeHttpRequests(
-        (requests) ->
-            requests
-                .requestMatchers("/welcome", "/myAccount", "/myBalance", "/myCards", "/myLoans")
-                .authenticated()
-                .requestMatchers("/contact", "/notices")
-                .permitAll());
+
+    http.csrf()
+        .disable()
+        .authorizeHttpRequests(
+            (requests) ->
+                requests
+                    .requestMatchers("/welcome", "/myAccount", "/myBalance", "/myCards", "/myLoans")
+                    .authenticated()
+                    .requestMatchers("/contact", "/notices", "/register")
+                    .permitAll());
     http.formLogin(Customizer.withDefaults());
     http.httpBasic(Customizer.withDefaults());
     return http.build();
