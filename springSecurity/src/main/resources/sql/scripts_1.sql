@@ -30,3 +30,5 @@ CREATE TABLE `customer`(
 );
 
 INSERT INTO `customer` (`email`,`pwd`,`role`) VALUES ('ted@gmail.com','123','admin');
+
+ALTER TABLE `customer` CHANGE COLUMN `pwd` `pwd`  VARCHAR(1000);  //assuming 1000 is enough

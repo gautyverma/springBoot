@@ -1,9 +1,6 @@
 package com.matuga.springSecurity.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import org.hibernate.annotations.GenericGenerator;
 
 @Entity
@@ -15,7 +12,10 @@ public class Customer {
   private int id;
 
   private String email;
+
+  @Column(length = 65555)
   private String pwd;
+
   private String role;
 
   public int getId() {
