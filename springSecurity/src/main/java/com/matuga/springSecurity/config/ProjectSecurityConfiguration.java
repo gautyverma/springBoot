@@ -36,6 +36,7 @@ public class ProjectSecurityConfiguration {
             })
         .and()
         .csrf()
+        .ignoringRequestMatchers("/contact", "/register")
         .disable()
         .authorizeHttpRequests(
             (requests) ->
