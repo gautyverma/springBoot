@@ -78,7 +78,8 @@ public class ProjectSecurityConfiguration {
                     .requestMatchers("/myLoans").hasRole("USER")
                     .requestMatchers("/myCards").hasRole("USER")
                     .requestMatchers("/user").authenticated()*/
-                    .requestMatchers("/welcome", "/myAccount", "/myBalance", "/myCards", "/myLoans")
+                    .requestMatchers(
+                        "/welcome", "/myAccount", "/myBalance", "/myCards", "/myLoans", "/user")
                     .authenticated()
                     .requestMatchers("/contact", "/notices", "/register")
                     .permitAll());
