@@ -1,6 +1,7 @@
 package com.matuga.springSecurity.config;
 
 import com.matuga.springSecurity.filter.CsrfCookieFilter;
+import com.matuga.springSecurity.filter.RequestValidationBeforeFilter;
 import jakarta.servlet.http.HttpServletRequest;
 import java.util.Collections;
 import org.springframework.context.annotation.Bean;
@@ -53,6 +54,7 @@ public class ProjectSecurityConfiguration {
                     .ignoringRequestMatchers("/contact", "/register")
                     .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse()))
         .addFilterAfter(new CsrfCookieFilter(), BasicAuthenticationFilter.class)
+        .addFilterBefore(new RequestValidationBeforeFilter(), BasicAuthenticationFilter.class)
         .authorizeHttpRequests(
             (requests) ->
                 requests
