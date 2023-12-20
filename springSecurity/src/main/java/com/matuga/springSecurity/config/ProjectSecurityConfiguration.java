@@ -1,10 +1,8 @@
 package com.matuga.springSecurity.config;
 
-import com.matuga.springSecurity.filter.AuthoritiesLoggingAfterFilter;
-import com.matuga.springSecurity.filter.AuthoritiesLoggingAtFilter;
-import com.matuga.springSecurity.filter.CsrfCookieFilter;
-import com.matuga.springSecurity.filter.RequestValidationBeforeFilter;
+import com.matuga.springSecurity.filter.*;
 import jakarta.servlet.http.HttpServletRequest;
+import java.util.Arrays;
 import java.util.Collections;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -31,10 +29,16 @@ public class ProjectSecurityConfiguration {
     CsrfTokenRequestAttributeHandler requestHandler = new CsrfTokenRequestAttributeHandler();
     requestHandler.setCsrfRequestAttributeName("_csrf");
 
+    /*
+    // JsessionID
     http.securityContext()
         .requireExplicitSave(false)
         .and()
         .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.ALWAYS))
+        */
+    http.sessionManagement()
+        .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+        .and()
         .cors()
         .configurationSource(
             new CorsConfigurationSource() {
@@ -45,6 +49,10 @@ public class ProjectSecurityConfiguration {
                 config.setAllowCredentials(true);
                 config.setAllowedMethods(Collections.singletonList("*"));
                 config.setAllowedHeaders(Collections.singletonList("*"));
+                config.setExposedHeaders(
+                    Arrays.asList(
+                        "Authorization")); // exposing header from backend application to different
+                // UI app
                 config.setMaxAge(3600L);
                 return config;
               }
@@ -59,6 +67,8 @@ public class ProjectSecurityConfiguration {
         .addFilterBefore(new RequestValidationBeforeFilter(), BasicAuthenticationFilter.class)
         .addFilterAfter(new AuthoritiesLoggingAfterFilter(), BasicAuthenticationFilter.class)
         .addFilterAt(new AuthoritiesLoggingAtFilter(), BasicAuthenticationFilter.class)
+        .addFilterAfter(new JWTTokenGeneratorFilter(), BasicAuthenticationFilter.class)
+        .addFilterBefore(new JWTTokenValidatorFilter(), BasicAuthenticationFilter.class)
         .authorizeHttpRequests(
             (requests) ->
                 requests
