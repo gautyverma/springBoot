@@ -1,6 +1,6 @@
 package com.matuga.springSecurity.config;
 
-import com.matuga.springSecurity.filter.CsrfCookieFliter;
+import com.matuga.springSecurity.filter.CsrfCookieFilter;
 import jakarta.servlet.http.HttpServletRequest;
 import java.util.Collections;
 import org.springframework.context.annotation.Bean;
@@ -31,8 +31,8 @@ public class ProjectSecurityConfiguration {
     http.securityContext()
         .requireExplicitSave(false)
         .and()
-        .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.ALWAYS)).
-    cors()
+        .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.ALWAYS))
+        .cors()
         .configurationSource(
             new CorsConfigurationSource() {
               @Override
@@ -52,10 +52,16 @@ public class ProjectSecurityConfiguration {
                 csrf.csrfTokenRequestHandler(requestHandler)
                     .ignoringRequestMatchers("/contact", "/register")
                     .csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse()))
-        .addFilterAfter(new CsrfCookieFliter(), BasicAuthenticationFilter.class)
+        .addFilterAfter(new CsrfCookieFilter(), BasicAuthenticationFilter.class)
         .authorizeHttpRequests(
             (requests) ->
                 requests
+                    /* --- Authorize - Not working in my machine - due to some DB reasons
+                    .requestMatchers("/myAccount").hasRole("USER")
+                    .requestMatchers("/myBalance").hasAnyRole("USER","ADMIN")
+                    .requestMatchers("/myLoans").hasRole("USER")
+                    .requestMatchers("/myCards").hasRole("USER")
+                    .requestMatchers("/user").authenticated()*/
                     .requestMatchers("/welcome", "/myAccount", "/myBalance", "/myCards", "/myLoans")
                     .authenticated()
                     .requestMatchers("/contact", "/notices", "/register")
