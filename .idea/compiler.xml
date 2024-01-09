@@ -6,8 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springSecurity" />
         <module name="springSecurity_OAUTH2GitHub" />
+        <module name="springSecurity" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
