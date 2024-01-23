@@ -8,17 +8,23 @@
         <outputRelativeToContentRoot value="true" />
         <module name="springSecurity_OAUTH2GitHub" />
         <module name="springSecurity" />
+        <module name="springSecurity_KeyCloak" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="spring" target="17" />
       <module name="springsecOAUTH2GitHub" target="17" />
+      <module name="springsecsection_13" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring" options="-parameters" />
       <module name="springSecurity" options="-parameters" />
+      <module name="springSecurity_KeyCloak" options="-parameters" />
       <module name="springSecurity_OAUTH2GitHub" options="-parameters" />
       <module name="springsecOAUTH2GitHub" options="-parameters" />
+      <module name="springsecsection_13" options="-parameters" />
     </option>
   </component>
 </project>
