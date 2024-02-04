@@ -10,6 +10,7 @@
         <module name="springSecurity_KeyCloak" />
         <module name="springSecurity" />
         <module name="limits-service" />
+        <module name="spring-cloud-config-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -22,6 +23,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="limits-service" options="-parameters" />
       <module name="spring" options="-parameters" />
+      <module name="spring-cloud-config-server" options="-parameters" />
       <module name="springSecurity" options="-parameters" />
       <module name="springSecurity_KeyCloak" options="-parameters" />
       <module name="springSecurity_OAUTH2GitHub" options="-parameters" />
