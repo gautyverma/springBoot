@@ -5,7 +5,8 @@ Ports Standarization
 
 - spring cloud config server = 8888
 - limits-service = 8080
-- currency exchange service = 8000, 8001, 8002,..
+- currency exchange service = 8000, 8001, 8002,....
+- currency conversion service = 8100, 8101, 8102,....
 
 ----------------------------------------
 Microservice Base layout of project
