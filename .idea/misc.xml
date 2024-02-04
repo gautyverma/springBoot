@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/SpringBoot_Security/springSecurity/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBoot_Security/springSecurity_OAUTH2GitHub/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBoot_Security/springSecurity_KeyCloak/springSecurity_KeyCloak/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBoot_Microservices/limits-service/pom.xml" />
       </list>
     </option>
   </component>
