@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/SpringBoot_Microservices/limits-service/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBoot_Microservices/spring-cloud-config-server/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBoot_Microservices/currency-exchange-service/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBoot_Microservices/currency-service/currency-exchange-service/pom.xml" />
       </list>
     </option>
   </component>
