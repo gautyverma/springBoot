@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="springSecurity_OAUTH2GitHub" />
         <module name="springSecurity_KeyCloak" />
+        <module name="currency-exchange-service" />
         <module name="springSecurity" />
         <module name="limits-service" />
         <module name="spring-cloud-config-server" />
@@ -21,6 +22,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="currency-exchange-service" options="-parameters" />
       <module name="limits-service" options="-parameters" />
       <module name="spring" options="-parameters" />
       <module name="spring-cloud-config-server" options="-parameters" />
