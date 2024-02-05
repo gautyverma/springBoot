@@ -13,6 +13,7 @@
         <module name="currency-exchange-service" />
         <module name="springSecurity" />
         <module name="limits-service" />
+        <module name="naming-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -26,6 +27,7 @@
       <module name="currency-conversion-service" options="-parameters" />
       <module name="currency-exchange-service" options="-parameters" />
       <module name="limits-service" options="-parameters" />
+      <module name="naming-server" options="-parameters" />
       <module name="spring" options="-parameters" />
       <module name="spring-cloud-config-server" options="-parameters" />
       <module name="springSecurity" options="-parameters" />

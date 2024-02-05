@@ -4,6 +4,7 @@
     <file url="file://$PROJECT_DIR$/SpringBoot_Microservices/currency-exchange-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot_Microservices/currency-service/currency-conversion-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot_Microservices/currency-service/currency-exchange-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot_Microservices/currency-service/naming-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot_Microservices/limits-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot_Microservices/spring-cloud-config-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot_Security/springSecurity/src/main/java" charset="UTF-8" />
