@@ -34,3 +34,7 @@ Step - 2 - Load Balancing
 Step - 3 - Naming Server to get upInstance details
 
 ![img_4.png](img_4.png)
+------------------------------------------
+Step - 4 - Circuit Breaker - Resilience
+
+![img_5.png](img_5.png)
