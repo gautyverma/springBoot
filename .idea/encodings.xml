@@ -2,6 +2,8 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/SpringBoot_Microservices/currency-exchange-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot_Microservices/currency-service/api-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot_Microservices/currency-service/api-gateway/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot_Microservices/currency-service/currency-conversion-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot_Microservices/currency-service/currency-exchange-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot_Microservices/currency-service/naming-server/src/main/java" charset="UTF-8" />

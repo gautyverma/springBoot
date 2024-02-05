@@ -8,6 +8,7 @@ Ports Standarization
 - currency exchange service = 8000, 8001, 8002,....
 - currency conversion service = 8100, 8101, 8102,....
 - Eureka naming-server = 8761
+- API-Gateway = 8765
 
 ----------------------------------------
 Microservice Base layout of project
