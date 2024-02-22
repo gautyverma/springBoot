@@ -8,9 +8,10 @@
         <outputRelativeToContentRoot value="true" />
         <module name="springSecurity_KeyCloak" />
         <module name="currency-conversion-service" />
+        <module name="javaBrains-spring-security" />
         <module name="spring-cloud-config-server" />
-        <module name="springSecurity_OAUTH2GitHub" />
         <module name="api-gateway" />
+        <module name="springSecurity_OAUTH2GitHub" />
         <module name="currency-exchange-service" />
         <module name="springSecurity" />
         <module name="limits-service" />
@@ -28,6 +29,7 @@
       <module name="api-gateway" options="-parameters" />
       <module name="currency-conversion-service" options="-parameters" />
       <module name="currency-exchange-service" options="-parameters" />
+      <module name="javaBrains-spring-security" options="-parameters" />
       <module name="limits-service" options="-parameters" />
       <module name="naming-server" options="-parameters" />
       <module name="spring" options="-parameters" />

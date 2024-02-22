@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="MavenProjectsManager">
@@ -15,6 +16,10 @@
         <option value="$PROJECT_DIR$/SpringBoot_Microservices/currency-service/currency-conversion-service/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBoot_Microservices/currency-service/naming-server/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBoot_Microservices/currency-service/api-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBoot_Security/JavaBrains/javaBrains-spring-security/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBoot_Security/udemy_eazybyte/springSecurity/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBoot_Security/udemy_eazybyte/springSecurity_OAUTH2GitHub/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBoot_Security/udemy_eazybyte/springSecurity_KeyCloak/springSecurity_KeyCloak/pom.xml" />
       </list>
     </option>
   </component>

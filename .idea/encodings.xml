@@ -9,9 +9,13 @@
     <file url="file://$PROJECT_DIR$/SpringBoot_Microservices/currency-service/naming-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot_Microservices/limits-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot_Microservices/spring-cloud-config-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot_Security/JavaBrains/javaBrains-spring-security/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot_Security/springSecurity/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot_Security/springSecurity_KeyCloak/springSecurity_KeyCloak/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot_Security/springSecurity_OAUTH2GitHub/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot_Security/udemy_eazybyte/springSecurity/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot_Security/udemy_eazybyte/springSecurity_KeyCloak/springSecurity_KeyCloak/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot_Security/udemy_eazybyte/springSecurity_OAUTH2GitHub/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springSecurity/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springSecurity_OAUTH2GitHub/src/main/java" charset="UTF-8" />
   </component>
